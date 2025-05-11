@@ -1,0 +1,9 @@
+[workspace]
+members = [
+    "fitbit-sdk",
+    "examples/user/get-profile",
+    "examples/activity/get-activity-summary",
+    "examples/sleep/get-sleep-log",
+]
+default-members = ["fitbit-sdk"]
+resolver = "2"

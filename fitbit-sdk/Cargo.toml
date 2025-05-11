@@ -1,0 +1,21 @@
+[package]
+name = "fitbit-sdk"
+version = "0.1.0"
+edition = "2024"
+authors = ["Katsuhiro Honda<freewave3@gmail.com>"]
+categories = ["api-bindings"]
+description = "An unofficial Rust SDK for Fitbit's Web API"
+keywords = ["fitbit", "sdk", "health", "fitness"]
+license = "MIT"
+repository = "https://github.com/yourusername/fitbit-sdk-rs/tree/main/fitbit-sdk"
+rust-version = "1.85.0"
+
+[dependencies]
+thiserror = "2.0.11"
+serde = { version = "1.0.217", features = ["derive"] }
+reqwest = { version = "0.12.12", features = ["json"] }
+async-trait = "0.1.85"
+tracing = "0.1.41"
+serde_json = "1.0.135"
+time = { version = "0.3.37", features = ["serde", "serde-well-known"] }
+tokio = { version = "1.43.0", features = ["full"] }
